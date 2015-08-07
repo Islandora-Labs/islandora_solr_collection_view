@@ -54,4 +54,12 @@ function islandora_solr_collection_view_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'collection';
+
+
+  // Add view to list of views to provide.
+  $views[$view->name] = $view;
+
+  // ...Repeat all of the above for each view the module should provide.
+  // At the end, return array of default views.
+  return $views;
 }

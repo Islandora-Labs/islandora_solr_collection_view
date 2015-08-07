@@ -10,5 +10,7 @@
  * Implements hook_views_api().
  */
 function islandora_solr_collection_view_views_api() {
-  return array('api' => '3.0');
+  return array(
+    'api' => '3.0',
+  );
 }
