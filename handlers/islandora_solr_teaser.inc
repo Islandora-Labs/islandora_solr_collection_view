@@ -16,15 +16,6 @@ class IslandoraSolrCollectionViewHandlerTeaser extends views_handler_field {
   public function render($values) {
     $values = (array) $values;
     return theme('islandora_solr_teaser', array('values' => $values));
-    /*
-    $pid = $values->PID;
-    $object = islandora_object_load($pid);
-    if ($object['TN']) {
-      return ('<img src="/islandora/object/' . $pid . '/datastream/TN/view" />');
-    }
-
-    return '';
-    */
   }
 
 }
