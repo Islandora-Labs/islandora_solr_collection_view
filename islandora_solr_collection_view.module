@@ -5,6 +5,9 @@
  * Provides a Collection View.
  */
 
+define('ISLANDORA_SOLR_COLLECTION_VIEW_DEFAULT_VIEW', 'collection');
+define('ISLANDORA_SOLR_COLLECTION_VIEW_DEFAULT_DISPLAY', 'block');
+
 
 /**
  * Implements hook_views_api().
@@ -13,6 +16,26 @@ function islandora_solr_collection_view_views_api() {
   return array(
     'api' => '3.0',
   );
+}
+
+/**
+ * Implements hook_menu(),
+ */
+function islandora_solr_collection_view_menu() {
+  $items = array(
+    'admin/islandora/tools/collection_view' => array(
+      'title'            => 'Collection view',
+      'description'      => 'Configuration page for collection view',
+      'page callback'    => 'drupal_get_form',
+      'page arguments'   => array('islandora_solr_collection_view_admin'),
+      'file'             => 'includes/admin.inc',
+      'access arguments' => array('administer site configuration'),
+      'type'             => MENU_NORMAL_ITEM,
+      'weight'           => -1,
+    ),
+  );
+
+  return($items);
 }
 
 /**
