@@ -49,13 +49,13 @@ function islandora_solr_collection_view_views_default_views() {
   $handler->display->display_options['fields']['PID']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['PID']['link_to_object'] = 0;
   /* Contextual filter: Islandora Solr: RELS_EXT_isMemberOfCollection_uri_ms */
-  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_ms']['id'] = 'RELS_EXT_isMemberOfCollection_uri_ms';
-  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_ms']['table'] = 'islandora_solr';
-  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_ms']['field'] = 'RELS_EXT_isMemberOfCollection_uri_ms';
-  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_ms']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_ms']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_ms']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_ms']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments'][$collection_field]['id'] = $collection_field;
+  $handler->display->display_options['arguments'][$collection_field]['table'] = 'islandora_solr';
+  $handler->display->display_options['arguments'][$collection_field]['field'] = $collection_field;
+  $handler->display->display_options['arguments'][$collection_field]['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments'][$collection_field]['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments'][$collection_field]['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments'][$collection_field]['summary_options']['items_per_page'] = '25';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
