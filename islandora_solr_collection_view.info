@@ -1,0 +1,11 @@
+name = Islandora Solr Collection View
+description = Provides a solr view as the collection display
+package = Islandora Tools
+core = "7.x"
+php = 5.2
+version = 7.x-dev
+
+dependencies[] = islandora_solr
+dependencies[] = views
+dependencies[] = islandora_solr_views
+
