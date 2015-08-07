@@ -14,3 +14,15 @@ function islandora_solr_collection_view_views_api() {
     'api' => '3.0',
   );
 }
+
+/**
+ * Implements hook_CMODEL_PID_islandora_view_object().
+ */
+
+function islandora_solr_collection_view_islandora_collectionCModel_islandora_view_object(AbstractObject $object) {
+  $view = views_embed_view('collection', 'block_1');
+  $view = render($view);
+  return array(
+    'collection_view' => $view,
+  );
+}
