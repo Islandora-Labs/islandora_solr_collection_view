@@ -11,3 +11,4 @@ dependencies[] = islandora_solr_views
 dependencies[] = views_ui
 
 files[] = handlers/islandora_solr_thumbnail.inc
+files[] = handlers/islandora_solr_teaser.inc

@@ -14,5 +14,12 @@ function islandora_solr_collection_view_views_data_alter(&$data) {
       'handler' => 'IslandoraSolrCollectionViewHandlerTN',
     ),
   );
+  $data['islandora_solr']['Islandora Teaser'] = array(
+    'title' => 'Teaser',
+    'help' => 'A default teaser view of the object, including thumbnail and label.',
+    'field' => array(
+      'handler' => 'IslandoraSolrCollectionViewHandlerTeaser',
+    ),
+  );
 
 }
