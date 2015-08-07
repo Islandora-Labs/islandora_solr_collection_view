@@ -65,7 +65,7 @@ function islandora_solr_collection_view_theme() {
 
 function islandora_solr_collection_view_islandora_collectionCModel_islandora_view_object(AbstractObject $object) {
   // TODO: render the block so that it has contextual menus.
-  $enabled = variable_get('islandora_solr_collection_view_enabled', 0);
+  $enabled = variable_get('islandora_solr_collection_view_enabled', 1);
   if ($enabled) {
     $view_name = variable_get('islandora_solr_collection_view_default_view_name', ISLANDORA_SOLR_COLLECTION_VIEW_DEFAULT_VIEW);
     $view_display = variable_get('islandora_solr_collection_view_default_display_name', ISLANDORA_SOLR_COLLECTION_VIEW_DEFAULT_DISPLAY);

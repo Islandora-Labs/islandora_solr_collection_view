@@ -20,7 +20,7 @@ function islandora_solr_collection_view_admin(array $form, array &$form_state) {
   $form['islandora_solr_collection_view_enabled'] = array(
     '#type' => 'checkbox',
     '#title' => t('Enable'),
-    '#default_value' => variable_get('islandora_solr_collection_view_enabled', 0),
+    '#default_value' => variable_get('islandora_solr_collection_view_enabled', 1),
     '#description' => t('Enable substitution for the standard collection view'),
     '#required' => FALSE,
    );
