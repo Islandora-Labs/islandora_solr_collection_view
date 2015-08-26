@@ -61,7 +61,7 @@ function islandora_solr_collection_view_theme() {
 /**
  * Implements hook_CMODEL_PID_islandora_view_object().
  */
-function islandora_solr_collection_view_islandora_collection_cmodel_islandora_view_object(AbstractObject $object) {
+function islandora_solr_collection_view_islandora_collectionCModel_islandora_view_object(AbstractObject $object) {
   // TODO: render the block so that it has contextual menus.
   $enabled = variable_get('islandora_solr_collection_view_enabled', 1);
   if ($enabled) {
