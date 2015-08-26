@@ -23,7 +23,7 @@ function islandora_solr_collection_view_admin(array $form, array &$form_state) {
     '#default_value' => variable_get('islandora_solr_collection_view_enabled', 1),
     '#description' => t('Enable substitution for the standard collection view'),
     '#required' => FALSE,
-   );
+  );
   $form['islandora_solr_collection_view_default_view_name'] = array(
     '#type' => 'textfield',
     '#title' => t('Collection view'),
@@ -40,4 +40,3 @@ function islandora_solr_collection_view_admin(array $form, array &$form_state) {
   );
   return system_settings_form($form);
 }
-

@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * This file contains all theme and preprocess functions.
+ */
+
+/**
  * Implements hook_preprocess_THEME().
  */
 function islandora_solr_collection_view_preprocess_islandora_solr_teaser(&$variables) {

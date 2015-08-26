@@ -2,7 +2,7 @@
 
 /**
  * @file
- * islandora-solr-teaser.tpl.php
+ * Tempate: islandora-solr-teaser.tpl.php.
  *
  * @TODO: needs documentation about file and variables
  */

@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * This file contains hooks provided by Views.
+ */
+
+/**
  * Implements hook_views_default_views().
  */
 function islandora_solr_collection_view_views_default_views() {
@@ -9,7 +14,6 @@ function islandora_solr_collection_view_views_default_views() {
   $collection_field = variable_get('islandora_solr_member_of_collection_field', 'RELS_EXT_isMemberOfCollection_uri_ms');
 
   // ---- COPY PASTA STARTS HERE!! -----
-
   $view = new view();
   $view->name = 'collection';
   $view->description = '';
@@ -52,8 +56,6 @@ function islandora_solr_collection_view_views_default_views() {
   $handler->display->display_options['arguments'][$collection_field]['summary_options']['items_per_page'] = '25';
 
   // -- COPY PASTA ENDS HERE -------
-
-
   // Add view to list of views to provide.
   $views[$view->name] = $view;
 
