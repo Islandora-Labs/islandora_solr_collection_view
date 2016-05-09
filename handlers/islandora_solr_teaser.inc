@@ -3,6 +3,10 @@
  * @file
  * Views base handler for images.
  */
+
+/**
+ * Views handler function.
+ */
 class IslandoraSolrCollectionViewHandlerTeaser extends views_handler_field {
   /**
    * Inherits.

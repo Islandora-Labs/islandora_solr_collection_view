@@ -19,7 +19,7 @@ function islandora_solr_collection_view_views_api() {
 }
 
 /**
- * Implements hook_menu(),
+ * Implements hook_menu().
  */
 function islandora_solr_collection_view_menu() {
   $items = array(
@@ -35,7 +35,7 @@ function islandora_solr_collection_view_menu() {
     ),
   );
 
-  return($items);
+  return ($items);
 }
 
 /**
@@ -56,13 +56,11 @@ function islandora_solr_collection_view_theme() {
     ),
   );
   // Results page.
-
 }
 
 /**
  * Implements hook_CMODEL_PID_islandora_view_object().
  */
-
 function islandora_solr_collection_view_islandora_collectionCModel_islandora_view_object(AbstractObject $object) {
   // TODO: render the block so that it has contextual menus.
   $enabled = variable_get('islandora_solr_collection_view_enabled', 1);
