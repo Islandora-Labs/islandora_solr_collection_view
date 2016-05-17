@@ -18,13 +18,8 @@ class IslandoraSolrCollectionViewHandlerTN extends views_handler_field {
    *   The rendered markup string.
    */
   public function render($values) {
-    $pid = $values->PID;
-    $object = islandora_object_load($pid);
-    if ($object['TN']) {
-      return ('<img src="/islandora/object/' . $pid . '/datastream/TN/view" />');
-    }
-
-    return '';
+    $values = (array) $values;
+    return theme('islandora_solr_thumbnail', array('values' => $values));
   }
 
 }
