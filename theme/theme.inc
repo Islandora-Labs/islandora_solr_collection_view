@@ -21,7 +21,6 @@ function islandora_solr_collection_view_preprocess_islandora_solr_teaser(&$varia
   }
   $variables['values']['title_link'] = l($title, $object_url, array('html' => TRUE, 'attributes' => array('title' => $title)));
 
-  $has_tn = in_array('TN', array_keys($variables['values']['fedora_datastreams_ms']));
   if (isset($object['TN']) && islandora_datastream_access(ISLANDORA_VIEW_OBJECTS, $object['TN'])) {
     $thumbnail_img = theme('image', array('path' => "$object_url/datastream/TN/view"));
   }
