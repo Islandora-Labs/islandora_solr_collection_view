@@ -13,7 +13,7 @@
         <dt>
           <!-- Thumbnail -->
           <?php if (isset($values['PID'])): ?>
-            <img src="/islandora/object/<?php print $values['PID']; ?>/datastream/TN/view" title="test"/>
+            <?php print $values['thumb_link']; ?>
           <?php endif; ?>
         </dt>
 
