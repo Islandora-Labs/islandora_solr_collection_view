@@ -25,6 +25,13 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 4. If you want to enable caching for the collection view, use Block caching / Per page option.
 5. You should also disable the Collection Solution Pack's collection display. To do this, go to Admin > Islandora > Solution pack configuration > Collection Solution Pack, and check "Completely disable default collection display generation."
 
+
+## Maintainers/Sponsors
+
+Current maintainers:
+
+* [Mark Jordan](https://github.com/mjordan)
+
 ## Troubleshooting/issues/feedback
 
 * [Islandora Group](https://groups.google.com/forum/?hl=en&fromgroups#!forum/islandora)
