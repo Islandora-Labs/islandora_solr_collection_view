@@ -26,6 +26,15 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 5. You should also disable the Collection Solution Pack's collection display. To do this, go to Admin > Islandora > Solution pack configuration > Collection Solution Pack, and check "Completely disable default collection display generation."
 
 
+It is possible to create displays that apply to specific collections:
+
+1. Add a new block display to the view. You probably want to name it so it's clear which collection it applies to.
+2. Add a filter to the new display, configuring it so that "RELS_EXT_isMemberOfCollection_uri_ms" is equal to your collection PID in the form "info:fedora/your:pid".
+3. When you save the view, a new block is created with the name you gave the display.
+  1. In Structure > Blocks, add the new block to the "Content" region.
+  2. In the block's "Configure" settings, make the block only show up on the page for the specific collection. To do this, in the "Show block on specific pages" settings, select "Only the listed pages" and enter "islandora/object/your:pid".
+4. Tell Views to not show the default block display for each collection that has its own block. Otherwise, both the default display and the collection-specific display will show up. To do this, for each collection that has its own block display (in other words, for each collection-specific block display you create), add a filter criteria to the default display so that "RELS_EXT_isMemberOfCollection_uri_ms" is *not* equal to your collection PID in the form 'info:fedora/your:pid.
+
 ## Maintainers/Sponsors
 
 Current maintainers:
