@@ -37,8 +37,8 @@ In Islandora Labs, the policies for merging may be different from the standard [
 These policies are set at the discretion of the Current Maintainer, as defined in this project's README.md.
 
 In this project, the following policies apply:
-* Only maintainers of this module may merge pull requests.
-* A maintainer may merge anyone's pull requests (except their own)
+* The maintainer(s) of this module, and any Islandora Committers, have merge privileges.
+* Merging one's own pull requests is permitted.
 * Formal github review is not required, nor is a courtesy waiting period required.
 
 [Islandora Labs Committers Group]: https://github.com/orgs/Islandora-Labs/teams/committers/members
