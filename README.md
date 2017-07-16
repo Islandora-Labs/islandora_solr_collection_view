@@ -40,6 +40,7 @@ It is possible to create displays that apply to specific collections:
 Current maintainers:
 
 * [Mark Jordan](https://github.com/mjordan)
+* [Rosemary Le Faive](https://github.com/rosiel)
 
 ## Troubleshooting/issues/feedback
 
