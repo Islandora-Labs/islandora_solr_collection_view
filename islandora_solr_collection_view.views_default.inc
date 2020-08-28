@@ -24,8 +24,8 @@ function islandora_solr_collection_view_views_default_views() {
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
+  /* Display: main */
+  $handler = $view->new_display('default', 'main', 'default');
   $handler->display->display_options['title'] = 'Collection';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
